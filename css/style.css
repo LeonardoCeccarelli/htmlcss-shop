@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Besley', serif;
 }
 
 .shop_container {
@@ -25,14 +26,13 @@
     width: 100%;
 }
 
-.dress_layover {
+.dress_layover > img {
     width: 100%;
     display: none;
 }
 
-.dress_layover > img:hover .dress_section{
+.dress_section > img:hover .dress_layover > img {
     display: block;
-    position: relative;
 }
 
 /* Aggiungi ai preferiti */
@@ -99,12 +99,9 @@
 
 .description * {
     display: inline-block;
-    padding-top: 5px;
+    padding-top: 4px;
     padding-right: 5px;
-}
-
-.description > h2 {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 /* Prezzo */
