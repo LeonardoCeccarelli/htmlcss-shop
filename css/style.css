@@ -9,11 +9,11 @@
     width: 920px;
     min-height: 200px;
     margin: 50px auto 0;
-    background-color:lightblue;
 }
 
 .dress_container {
-    width: 33%;
+    width: -webkit-calc(100% / 3 - 4px);
+    display: inline-block;
 }
 
 .dress_section {
@@ -24,14 +24,17 @@
 
 .dress_section > img {
     width: 100%;
+    position: relative;
 }
 
 .dress_layover > img {
     width: 100%;
+    position: absolute;
+    top: 0;
     display: none;
 }
 
-.dress_section > img:hover .dress_layover > img {
+.dress_section:hover .dress_layover > img{
     display: block;
 }
 
@@ -40,17 +43,17 @@
 .favorite {
     background-color: lightgray;
     border-radius: 50%;
-    height: 70px;
-    width: 70px;
-    line-height: 70px;
+    height: 55px;
+    width: 55px;
+    line-height: 50px;
     text-align: center;
     position: absolute;
-    top: 5%;
-    left: 10%;
+    top:2%;
+    left: 6%;
 }
 
 .favorite > a {
-    font-size: 50px;
+    font-size: 45px;
     text-decoration: none;
     color: black;
 }
@@ -71,7 +74,7 @@
 }
 
 .discount > span {
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
     color: white;
     padding: 13px 7px;
@@ -89,13 +92,21 @@
 }
 
 .eco > span {
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
     color: white;
     padding: 13px 7px;
 }
 
+.without_discount {
+    left: 0;
+}
+
 /* Descrizione */
+
+.description {
+    margin-bottom: 10px;
+}
 
 .description * {
     display: inline-block;
