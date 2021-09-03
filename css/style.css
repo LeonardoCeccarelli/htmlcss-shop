@@ -3,3 +3,117 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.shop_container {
+    width: 920px;
+    min-height: 200px;
+    margin: 50px auto 0;
+    background-color:lightblue;
+}
+
+.dress_container {
+    width: 33%;
+}
+
+.dress_section {
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.dress_section > img {
+    width: 100%;
+}
+
+.dress_layover {
+    width: 100%;
+    display: none;
+}
+
+.dress_layover > img:hover .dress_section{
+    display: block;
+    position: relative;
+}
+
+/* Aggiungi ai preferiti */
+
+.favorite {
+    background-color: lightgray;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
+
+.favorite > a {
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.favorite > a:hover {
+    color: red;
+}
+
+/* Sconto */
+
+.discount {
+    background-color: rgb(235, 14, 106);
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    bottom: 4%;
+    left: 0;
+}
+
+.discount > span {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 13px 7px;
+}
+
+/* Prodotto sostenibile */
+
+.eco {
+    background-color: rgba(1, 102, 55, .6);
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    bottom: 4%;
+    left: 22%;
+}
+
+.eco > span {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 13px 7px;
+}
+
+/* Descrizione */
+
+.description * {
+    display: inline-block;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+.description > h2 {
+    font-size: 20px;
+}
+
+/* Prezzo */
+
+.price_now {
+    color: red;
+    font-weight: bold;
+}
+
+.price_canc {
+    text-decoration: line-through;
+}
